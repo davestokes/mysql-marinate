@@ -2,18 +2,28 @@ Homework for Chapter 2 of Learning MySQL (2006 edition), from p. 94:
 
 Exercises:
 1) What is command completion?
+The shell fills in partiually complete comamnds in an aid to the user.
 
 2) What are the relative advantages of installing MySQL using the package,
  directory archive (tarball or "no-install", or compiled methods?
+Package: Package manager does nost of the maintenance and checks for compatibility issues. Usually 
+makes uprading much easier.  Tar-ball -- MySQL's tarball are hevaily tested, optimized, and 
+more up to date than packages from Linux distros. They need a smarter admin than a package to
+install.  Compiled -- you can customize exactly what is needed or not needed 
+(no need for Slovinien character sets or collation, do not build them).
 
 3) How do you verify the integrity of downloaded packages?
+Compare the md5 hashes
 
 4) How do you add the MySQL bin directory to the operating system path?
+PATH=$PATH:/usr/local/mysql/bin  
 
 Additional Exercises (not in the book): 
 1) Document how you installed MySQL and any issues you came across with installation. 
  (The goal is to be easy to install it again on a similar machine.)
+Using 5.6 Windows installer, no problems.
 
 2) Document where important files should be.
+$DATADIR  :-)
 
 Do not forget to do a pull request when your homework is complete.
